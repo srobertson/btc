@@ -1,2 +1,3 @@
-trades      = rule('https://mtgox.com/api/1/BTCUSD/ticker')
-trades.freq = MINUTELY
+headlines      = rule('http://feeds.finance.yahoo.com/rss/2.0/headline?s=BAC&region=US&lang=en-US')
+headlines.freq = MINUTELY
+headlines.interval = 10
